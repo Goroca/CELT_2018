@@ -1,0 +1,30 @@
+# Reloj principal del sistema
+NET "CLK" LOC = "M6"; # Seal de reloj del sistema
+# Conexiones de los DISPLAYS
+NET "SEG7<0>" LOC = "L14"; # seal = CA
+NET "SEG7<1>" LOC = "H12"; # Seal = CB
+NET "SEG7<2>" LOC = "N14"; # Seal = CC
+NET "SEG7<3>" LOC = "N11"; # Seal = CD
+NET "SEG7<4>" LOC = "P12"; # Seal = CE
+NET "SEG7<5>" LOC = "L13"; # Seal = CF
+NET "SEG7<6>" LOC = "M12"; # Seal = CG
+# Seales de activacin de los displays
+NET "AN<0>" LOC = "K14"; # Activacin del display 0 = AN0
+NET "AN<1>" LOC = "M13"; # Activacin del display 1 = AN1
+NET "AN<2>" LOC = "J12"; # Activacin del display 2 = AN2
+NET "AN<3>" LOC = "F12"; # Activacin del display 3 = AN3
+#Entrada externa donde se conecta la seal entrante
+NET "LIN" LOC = "B2"; # Entrada de datos
+#Salidas para generar la seal analgica (no tocar estas lneas)
+NET "SPI_CLK" LOC = "A9"; # Salida externa terminal 14
+NET "SPI_DIN" LOC = "B9"; # Salida externa terminal 15
+NET "SPI_CS1" LOC = "C9"; # Salida externa terminal 17
+#Entradas para arrancar y parar la seal analgica (no tocar estas lneas)
+NET "BTN_START" LOC = "G12"; # Entrada externa BTN0
+NET "BTN_STOP" LOC = "C11"; # Entrada externa BTN1
+
+NET "RESET0" LOC = "M4"; #RESET
+NET "PULSADOR" LOC = "A7"; #Reactivar recepcion de mensaje
+NET "LED" LOC = "M5"; #Led que indica fin de mensaje
+
+NET "SELECTOR" LOC = "P11"; #Recepcion del mensaje o mostrar numero de palabras
